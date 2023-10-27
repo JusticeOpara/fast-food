@@ -1,9 +1,7 @@
-
 <template>
-    <router-view />
+    LoginPage
 </template>
 
 <script setup>
 
 </script>
-
