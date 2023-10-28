@@ -4,14 +4,15 @@
 
         <img :src="meal.strMealThumb" :alt="meal.strMeal" class="  object-cover rounded-t-[20px] " />
         <div class="flex mb-5">
+
             <div>Cartgory: {{ meal.strCategory }}</div>
             <div>Area: {{ meal.strArea }}</div>
             <div>Tags: {{ meal.strTags }}</div>
         </div>
 
-<div>
-    {{ meal.strInstructions }}
-</div>
+        <div>
+            {{ meal.strInstructions }}
+        </div>
 
         <div class="flex gap-10 mb-28">
             <div>
@@ -52,6 +53,7 @@
 import axiosClient from "../axiosClient"
 import { onMounted, ref } from "vue"
 import { useRoute } from "vue-router";
+
 import YoutubeButton from "../components/YoutubeButton.vue";
 
 const route = useRoute()

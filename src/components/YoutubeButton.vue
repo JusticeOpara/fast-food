@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" target="_blank">
+    <a :href="href" target="_blank" class="bg-[#f9b111] ">
         <slot>YouTube</slot>
     </a>
 
