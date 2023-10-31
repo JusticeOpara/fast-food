@@ -1,9 +1,9 @@
 
 <template>
-    <nav class="bg-blue-300 w-full  h-[70px] px-28 flex justify-between items-center">
-        <router-link :to="{ name: 'Home' }" class="bg-red-200 px-5 inline-flex items-center h-full text-base font-medium ">
-            <img src="../assets/foodie.png" class="w-[50px] h-auto" alt="" />
-            <p class=" font-bold text-3xl font-ClashDisplay">Foodie</p>
+    <nav class=" w-full bgg-[#d4e1ec]  h-[70px] px-28 max-md:px-0 flex justify-between items-center">
+        <router-link :to="{ name: 'Home' }" class=" px-5 inline-flex items-center h-full text-base font-medium ">
+            <img src="../assets/foodie.png" class="w-[50px] h-auto" alt=" A food image" />
+            <p class=" font-bold text-3xl font-ClashDisplay text-[#f9b111]">Foodie</p>
 
         </router-link>
 
@@ -11,38 +11,44 @@
 
         <div v-show="!mobile" class="flex items-center gap-1 font-Satoshi max-md:hidden">
             <router-link :to="{ name: 'byName' }"
-                class=" inline-flex font-semibold text-base items-center px-2 h-full hover:bg-purple-200 ">Search
-                Meals</router-link>
+                class=" inline-flex font-semibold text-base items-center px-2 h-full hover:bg-[#f9b111] ">Explore</router-link>
 
-            <router-link :to="{ name: 'byLetter' }" class=" inline-flex items-center px-2 h-full hover:bg-purple-200">Meals
-                By Letter</router-link>
+            <router-link :to="{ name: 'byLetter' }" 
+            class="font-semibold inline-flex items-center px-2 h-full hover:bg-[#f9b111]">Alphacuisine</router-link>
 
             <router-link :to="{ name: 'ingredients' }"
-                class=" inline-flex items-center px-2 h-full hover:bg-purple-200">Meals By Ingredients</router-link>
+                class="font-semibold inline-flex items-center px-2 h-full hover:bg-[#f9b111]">Culinary</router-link>
         </div>
 
         <div @click="toggleMobileNav"
             class="h-[45px] w-[45px] justify-center  max-md:flex max-md: xl:hidden  cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
-            <img v-show="mobile" :class="{ 'icon-active': mobileNav }" src="../assets/navbar.svg"
+            <img v-show="mobile" :class="{ 'icon-active': mobileNav }" src="../assets/navbar-icon.svg"
                 class="w-[33.75px] h-auto cursor-pointer transition-[0.8s]" alt="navbar" />
         </div>
 
         <Transition name="mobile-nav">
             <ul v-show="mobileNav" @click.stop=""
-                class="flex fixed flex-col items-center justify-evenly w-full max-w-[250px] h-screen z-[100]  bg-white top-0  left-0 font-Roboto">
+                class="flex fixed flex-col items-center justify-evenly w-full max-w-[250px] h-screen z-[100]  bg-white top-0  left-0 font-Satoshi">
 
-                <li class="flex bg-white gap-5">
+                <li class=" bg-white ">
 
-                    <router-link to="" class="hover:text-[#007aff] text-xl mr-0  text-[#000]">Search Meals</router-link>
+                    <router-link :to="{name: 'byName'}" class="hover:text-[#007aff]  mr-0  text-[#000]">Explore</router-link>
                 </li>
 
-                <li class="flex gap-5">
+                <li class="">
 
-                    <router-link to="" class="hover:text-[#007aff] text-xl mr-0 text-[#000]">Meals By Letter</router-link>
+                    <router-link :to="{name: 'byLetter'}" class="hover:text-[#007aff]  mr-0 text-[#000]">Alphacuisine</router-link>
                 </li>
 
                 <li>
-                    <router-link to="" class=""> Meals By Ingredients</router-link>
+                    <router-link :to="{name: 'ingredients'}" class=""> Culinary</router-link>
+                </li>
+                <li>
+                    <router-link  to="" class="">kitchen tips </router-link>
+                </li>
+
+                <li>
+                    <router-link to="" class="">About Us</router-link>
                 </li>
 
             </ul>

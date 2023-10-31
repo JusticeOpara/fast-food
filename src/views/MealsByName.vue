@@ -1,11 +1,24 @@
 
 <template>
-    <div class="p-8">
-        <input type="text" class="rounded border-2 border-gray-200 w-full" placeholder="Search for Meals" v-model="keyword"
-            @change="searchMeals" />
-    </div>
+    <div class="px-28 max-md:px-0 mt-5 ">
 
-    <Meals :meals="meals" />
+        <div class="mb-3">
+            <p class="text-lg font-medium font-Commissioner">Hey there!</p>
+            <h1 class="font-bold text-4xl font-ClashDisplay">Find your food now</h1>
+        </div>
+        
+        <div class="flex gap-10 h-[50px]">
+            <input type="text" class="rounded-2xl text-lg border border-black  w-full h-full pl-5 outline-none" placeholder="Search for Meals"
+                v-model="keyword" @change="searchMeals" />
+
+                <div class="bg-[#f9b111] w-[50px] h-full flex items-center justify-center rounded-xl">
+                    <img src="../assets/filter.svg" class="w-full " alt="filter"/>
+                </div>
+             
+        </div>
+
+        <Meals :meals="meals" />
+    </div>
 </template>
 
 
@@ -13,7 +26,7 @@
 
 import { computed } from '@vue/reactivity';
 import store from '../store';
-import { onMounted,ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router'
 import Meals from '../components/Meals.vue';
 
@@ -25,18 +38,18 @@ console.log(meals, "--meals meals");
 
 
 function searchMeals() {
-if(keyword.value){
-    store.dispatch("searchMeals", keyword.value);
-}else{
-    store.commit("setSearchedMeals",[])
+    if (keyword.value) {
+        store.dispatch("searchMeals", keyword.value);
+    } else {
+        store.commit("setSearchedMeals", [])
+    }
+
 }
-  
-}
-onMounted(()=>{
-   keyword.value =  route.params.name
-   if(keyword.value){
-    searchMeals
-   }
+onMounted(() => {
+    keyword.value = route.params.name
+    if (keyword.value) {
+        searchMeals
+    }
 })
 
 </script>

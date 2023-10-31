@@ -1,21 +1,23 @@
 <template>
-    <div class="flex gap-2 justify-center mt-2">
+  <div  class="px-28 max-md:px-0 mt-5">
+    <div class="flex gap-2 justify-center ">
 
-        <router-link :to="{ name: 'byLetter', params: { letter } }" v-for='letter of letters' :key="letter">
+      <router-link :to="{ name: 'byLetter', params: { letter } }" v-for='letter of letters'
+        class="text-lg font-ClashDisplay font-bold max-md:text-[5px]" :key="letter">
 
-            {{ letter }}
+        {{ letter }}
 
-        </router-link>
-       
+      </router-link>
+
     </div>
     <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3
-                       xl:grid-cols-3 2xl:grid-cols-6 gap-5 px-20 pb-20 mt-[40px] max-md:p-0 bg-black ">
+               xl:grid-cols-3 2xl:grid-cols-6 gap-5 px-20 pb-20 mt-[40px] max-md:p-0 bg-black ">
 
-        <MealItem  v-for="meal of meals" :key="meal.idMeal" :meal="meal"/>
+<MealItem  v-for="meal of meals" :key="meal.idMeal" :meal="meal"/>
 
-    </div> -->
-    <Meals :meals="meals"/>
- 
+</div> -->
+    <Meals :meals="meals" />
+  </div>
 </template>
 
 
