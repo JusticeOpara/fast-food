@@ -1,7 +1,7 @@
 
 <template>
     <nav class=" w-full bgg-[#d4e1ec]  h-[70px] px-28 max-md:px-0 flex justify-between items-center">
-        <router-link :to="{ name: 'Home' }" class=" px-5 inline-flex items-center h-full text-base font-medium ">
+        <router-link :to="{ name: 'Home' }" class="inline-flex items-center h-full text-base font-medium ">
             <img src="../assets/foodie.png" class="w-[50px] h-auto" alt=" A food image" />
             <p class=" font-bold text-3xl font-ClashDisplay text-[#f9b111]">Foodie</p>
 
