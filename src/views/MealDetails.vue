@@ -1,30 +1,27 @@
 <template>
-    <div class="bg-red-500 h-full w-full px-28 max-sm:px-0 mt-10">
+    <div class=" h-full w-full px-28 max-md:px-0 mt-5  max-sm:mt-5">
 
         <img :src="meal.strMealThumb" :alt="meal.strMeal"
             class="object-cover rounded-t-[20px] w-full h-[400px] relative " />
 
 
-        <div class="bg-orange-300 rounded-t-[50px] flex flex-col justify-center absolute top-[450px] w-[82.5%] max-md:w-full h-full px-10">
-            <h1 class="text-xl font-bold font-ClashDisplay pl-2">{{ meal.strMeal }}</h1>
+        <div class="bg-orange-300 rounded-t-[50px] flex flex-col justify-between absolute top-[450px] w-[82.5%]  max-md:w-full py-10 px-10 max-md:px-5">
+            <h1 class="text-2xl max-sm:text-xl font-bold font-ClashDisplay pl-2 mb-4">{{ meal.strMeal }}</h1>
 
 
-            <div class="flex justify-between px-">
+            <div class="flex justify-between mb-5 ">
 
-                <div>
+                <div class="max-sm:hidden">
                     <h1 class="text-xl font-bold font-ClashDisplay">Cartgory</h1>
                     <p class="text-sm font-Satoshi leading-normal"> {{ meal.strCategory }}</p>
                 </div>
-                <div>
+                <div class="max-sm:hidden">
                     <h1 class="text-xl font-bold font-ClashDisplay">Area</h1>
-                    <p class="text-sm font-Satoshi leading-normal">  {{ meal.strArea }}</p>
+                    <p class="text-sm font-Satoshi leading-normal"> {{ meal.strArea }}</p>
                 </div>
+                
                 <div>
-                    <h1 class="text-xl font-bold font-ClashDisplay">Tags</h1>
-                    <p class="text-sm font-Satoshi leading-normal">{{ meal.strTags }}</p>
-                </div>
-                <div>
-                    <h1 class="text-xl font-bold font-ClashDisplay ">Ingredients {{ }}</h1>
+                    <h1 class="text-xl font-bold font-ClashDisplay max-sm:text-lg">Ingredients {{ }}</h1>
                     <ul>
 
                         <template v-for="(element, index) of new Array(20)">
@@ -36,7 +33,7 @@
                 </div>
 
                 <div>
-                    <h1 class="text-xl font-bold font-ClashDisplay">Measures {{ }}</h1>
+                    <h1 class="text-xl font-bold font-ClashDisplay max-sm:text-lg">Measures {{ }}</h1>
                     <ul>
                         <template v-for="(element, index) of new Array(20)">
                             <li v-if="meal[`strMeasure${index + 1}`]" class="text-sm font-Satoshi leading-normal">
@@ -48,26 +45,24 @@
 
             </div>
 
-            <div class="bg-white mb-20">
-                <h1 class="font-ClashDisplay">Procedure</h1>
-                <p class="font-bold font-Satoshi">
+            <div class="bg-white w-full ">
+                <h1 class="font-ClashDisplay text-xl font-bold max-sm:text-lg">Procedure</h1>
+                <p class="text-base font-Satoshi">
                     {{ meal.strInstructions }}
                 </p>
-
+                <YoutubeButton :href="meal.strYoutube">Youtube</YoutubeButton>
+                <YoutubeButton :href="meal.strSource">View Origial Source</YoutubeButton>
             </div>
 
+
         </div>
-
-
-        <!-- <div>
-            <YoutubeButton :href="meal.strYoutube">Youtube</YoutubeButton>
-        </div>
-        <div class="bg-blue-200">
-            <YoutubeButton :href="meal.strSource">View Origial Source</YoutubeButton>
-        </div> -->
-
+   
     </div>
+   
 </template>
+
+
+
 
 <script setup>
 
@@ -86,5 +81,8 @@ onMounted(() => {
             meal.value = data.meals[0] || {}
         })
 })
+
+
+
 
 </script>
