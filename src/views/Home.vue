@@ -6,17 +6,17 @@
                 class="h-full w-[60%] rounded-l-[20px] max-md:rounded-[20px] bg-[#f9b111] font-ClashDisplay flex flex-col gap-[18px] max-md:gap-3 justify-center pl-14 max-md:p-6 max-md:w-full ">
 
                 <h1
-                    className="font-bold text-3xl w-[500px] max-md:w-full max-md:text-4xl max-sm:text-3xl bg-redd-300 leading-normal ">
+                    className="font-bold text-3xl w-[500px] max-md:w-full max-md:text-4xl max-sm:text-3xl bg-redd-300 leading-normal 2xl:text-5xl ">
                     Welcome to <span class="">Foodie. </span>
                 </h1>
 
-                <h1 className="text-xl font-bold max-sm:font-Satoshi max-sm:font-bold"> Explore our menu by letter,
+                <h1 className="text-xl font-bold max-sm:font-Satoshi max-sm:font-bold 2xl:text-2xl"> Explore our menu by letter,
                     ingredient, and more. </h1>
 
-                <h2 className="text-xl font-bold max-sm:font-Satoshi max-sm:hidden"> Savor flavors that dance on your taste
+                <h2 className="text-xl font-bold max-sm:font-Satoshi max-sm:hidden 2xl:text-2xl"> Savor flavors that dance on your taste
                     buds,</h2>
 
-                <h1 className="text-xl font-bold max-sm:font-Satoshi max-sm:font-bold w-[400px] max-md:w-full"> Unlock
+                <h1 className="text-xl  font-bold max-sm:font-Satoshi max-sm:font-bold w-[400px] max-md:w-full"> Unlock
                     exclusive up to <span className=""> 30% </span> discounts for a taste-filled journey!"</h1>
 
             </div>
