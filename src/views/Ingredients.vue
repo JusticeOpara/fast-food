@@ -1,7 +1,7 @@
 
 
 <template>
-  <div class="px-28 max-md:px-0">
+  <div class="px-28 max-md:px-4">
     
     <div class="mb-3">
       <p class="text-lg font-medium font-Commissioner">Hey there!</p>
@@ -19,10 +19,10 @@
 
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 shadow bg-inherit">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-8 shadow bg-inherit">
         <a href="#" @click.prevent="openIngredient(ingredient)" v-for="ingredient of computedIngredients"
-          :key="ingredient.idIngredient" class="block bg-[#f9b111] rounded p-3 mb-3 shadow">
-          <h3 class="text-2xl font-bold mb-2 font-ClashDisplay">{{ ingredient.strIngredient }}</h3>
+          :key="ingredient.idIngredient" class="flex justify-center item-center bg-[#f9b111] rounded md:p-36 p-24 shadow">
+          <h3 class="md:text-4xl text-2xl text-center flex items-center justify-center  font-bold font-ClashDisplay">{{ ingredient.strIngredient }}</h3>
         </a>
 
       </div>

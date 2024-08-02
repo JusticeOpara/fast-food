@@ -41,7 +41,7 @@
                 </li>
 
                 <li>
-                    <router-link :to="{name: 'ingredients'}" class=""> Culinary</router-link>
+                    <router-link :to="{name: 'ingredients'}" class=""> Meal by Category</router-link>
                 </li>
                 <li>
                     <router-link  to="" class="">kitchen tips </router-link>

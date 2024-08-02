@@ -22,7 +22,7 @@
             </div>
 
 
-            <div class="h-full w-[50%] bg-black rounded-r-[20px] flex justify-end max-md:hidden">
+            <div class="h-full w-[50%] bg-black rounded-r-[20px] flex justify-end max-md:hidden ">
                 <img src="../assets/eating.jpeg" class="h-full w-full object-cover rounded-r-[20px]" alt="" />
             </div>
 

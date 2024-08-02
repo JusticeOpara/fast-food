@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" target="_blank" class="bg-[#f9b111] border px-2 rounded py-1 font-Satoshi font-medium ">
+    <a :href="href" target="_blank" class="bg-[#FF0000] border-black text-white font-bold px-2 rounded py-1 font-Satoshi  ">
         <slot>YouTube</slot>
     </a>
 
