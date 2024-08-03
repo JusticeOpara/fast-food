@@ -9,6 +9,7 @@ export default {
         Commissioner: ['Commissioner', 'sans-serif'],
         Roboto: ['Roboto','sans-serif']
       },
+      xImage:"../../assets/food-cave.jpg"
     },
   },
   plugins: [require("daisyui")],

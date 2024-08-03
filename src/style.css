@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-ingredient {
+    background-size: cover;
+    background-position: center;
+}
+.food-cave-bg {
+    background-image: url('../assets/food-cave.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
