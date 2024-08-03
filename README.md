@@ -28,25 +28,11 @@ cd foodie
 
 2. Install the dependencies:
 
-If you are using npm:
-
 ```bash
 npm install
 ```
 
-or if you are using Yarn:
-
-```bash
-yarn install
-```
-
-3. Start the development server:
-
-```bash
-npm run dev
-```
-
-or with Yarn
+1. Start the development server:
 
 ```bash
 npm run dev
@@ -61,7 +47,7 @@ To deploy this project on a live system, follow these steps:
 1. Build for production:
 
 ```bash
-npm run buid
+npm run build
 ```
 
 ## Built With
