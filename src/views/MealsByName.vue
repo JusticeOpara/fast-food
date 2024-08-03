@@ -14,7 +14,7 @@
         @change="searchMeals"
       />
       <div
-        v-if="!keyword"
+        v-if="!keyword "
         class="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none font-bold text-4xl flex justify-center items-center inset-0"
       >
         Start searching for any meal and hit Enter
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <Meals :meals="meals" />
+    <Meals :meals="meals" v-if="keyword"/>
   </div>
 </template>
 

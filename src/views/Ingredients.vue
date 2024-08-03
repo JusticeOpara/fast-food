@@ -34,18 +34,6 @@
         </a>
 
       </div>
-     
-<!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-8 shadow bg-inherit">
-  <a href="#"
-     @click.prevent="openIngredient(ingredient)"
-     v-for="ingredient of computedIngredients"
-     :key="ingredient.idIngredient" 
-     class="food-cave-bg flex justify-center items-center rounded md:p-36 p-24 shadow">
-    <h3 class="md:text-4xl text-2xl text-center flex items-center justify-center font-bold font-ClashDisplay text-white">
-      {{ ingredient.strIngredient }}
-    </h3>
-  </a>
-</div> -->
     </div>
   </div>
 </template>
