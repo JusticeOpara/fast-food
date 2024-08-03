@@ -1,7 +1,85 @@
-# Vue 3 + Vite
+# 🍽️ Foodie: Your Ultimate Meal Discovery Platform! 🍝
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Alt text](./src/assets/homepage.png)
 
-## Recommended IDE Setup
+Foodie is a modern food application that seamlessly connects to an API, offering users an array of meal options organized by search, letters, and ingredients. The platform features a distinctive user interface crafted with Vue.js and TailwindCSS, enhancing both functionality and aesthetics. To elevate user engagement, captivating animations have been integrated, ensuring a professional and visually appealing experience.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Getting Started
+
+These instructions will help you set up a copy of the project on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+* [Node.js]
+* [npm] or [Yarn]
+
+### Installing
+
+Follow these steps to get your development environment up and running:
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/JusticeOpara/fast-food.git
+cd foodie
+```
+
+1. Install the dependencies:
+
+If you are using npm:
+
+```bash
+npm install
+```
+
+or if you are using Yarn:
+
+```bash
+yarn install
+```
+
+1. Start the development server:
+
+```bash
+npm run dev
+```
+
+or with Yarn
+
+```bash
+npm run dev
+```
+
+Your application should now be running on `http://localhost:5173`.
+
+## Deployment
+
+To deploy this project on a live system, follow these steps:
+
+1. Build for production:
+
+```bash
+npm run dev
+```
+
+## Built With
+
+* [Vue]
+* [Vuex]
+* [TailwindCSS]
+* [TheMealDB API](https://www.themealdb.com/api.php)
+
+## Contributing
+
+I welcome contributions from the community! Feel free to fork the repository, make changes, and create pull requests.
+
+## ⭐ Like this project?
+
+If you find this Code Stacker project helpful, consider giving it a star on GitHub to show your support! This helps others discover the project and motivates me to continue development.
+
+## 📬 Feedback
+
+If you have any feedback, please reach out to me at justiceopara33@gmail.com
