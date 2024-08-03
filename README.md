@@ -4,7 +4,6 @@
 
 Foodie is a modern food application that seamlessly connects to an API, offering users an array of meal options organized by search, letters, and ingredients. The platform features a distinctive user interface crafted with Vue.js and TailwindCSS, enhancing both functionality and aesthetics. To elevate user engagement, captivating animations have been integrated, ensuring a professional and visually appealing experience.
 
-
 ## Getting Started
 
 These instructions will help you set up a copy of the project on your local machine for development and testing purposes.
@@ -27,7 +26,7 @@ git clone https://github.com/JusticeOpara/fast-food.git
 cd foodie
 ```
 
-1. Install the dependencies:
+2. Install the dependencies:
 
 If you are using npm:
 
@@ -41,7 +40,7 @@ or if you are using Yarn:
 yarn install
 ```
 
-1. Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
@@ -62,15 +61,15 @@ To deploy this project on a live system, follow these steps:
 1. Build for production:
 
 ```bash
-npm run dev
+npm run buid
 ```
 
 ## Built With
 
-* [Vue]
-* [Vuex]
-* [TailwindCSS]
-* [TheMealDB API](https://www.themealdb.com/api.php)
+* Vue
+* Vuex
+* TailwindCSS
+* TheMealDB API
 
 ## Contributing
 
@@ -78,8 +77,8 @@ I welcome contributions from the community! Feel free to fork the repository, ma
 
 ## ⭐ Like this project?
 
-If you find this Code Stacker project helpful, consider giving it a star on GitHub to show your support! This helps others discover the project and motivates me to continue development.
+If you find this Foodie project helpful, consider giving it a star on GitHub to show your support! This helps others discover the project and motivates me to continue development.
 
 ## 📬 Feedback
 
-If you have any feedback, please reach out to me at justiceopara33@gmail.com
+If you have any feedback, please reach out to me at `justiceopara33@gmail.com`
