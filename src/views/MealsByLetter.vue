@@ -1,9 +1,9 @@
 <template>
-  <div  class="px-28 max-md:px-0 mt-5">
-    <div class="flex gap-2 justify-center ">
+  <div  class="px-28 max-md:px-6 mt-5">
+    <div class="flex gap-2 justify-center w-full flex-wrap">
 
       <router-link :to="{ name: 'byLetter', params: { letter } }" v-for='letter of letters'
-        class="text-lg font-ClashDisplay font-bold max-md:text-[5px]" :key="letter">
+        class="text-3xl font-ClashDisplay font-bold  focus:text-[#f9b111] hover:text-[#f9b111]" :key="letter">
 
         {{ letter }}
 

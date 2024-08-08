@@ -1,5 +1,5 @@
 <template>
-  <div class="px-28 max-md:px-4">
+  <div class="px-28 max-md:px-6">
     <div class="my-4">
       <p class="text-xl font-medium font-Commissioner">Hey there!</p>
       <h1 class="font-bold text-4xl font-ClashDisplay">

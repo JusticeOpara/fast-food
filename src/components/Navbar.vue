@@ -1,6 +1,6 @@
 
 <template>
-    <nav class=" w-full bgg-[#d4e1ec]  h-[70px] px-28 max-md:px-0 flex justify-between items-center">
+    <nav class=" w-full h-[70px] px-28 max-md:px-6 flex justify-between items-center">
         <router-link :to="{ name: 'Home' }" class="inline-flex items-center h-full text-base font-medium ">
             <img src="../assets/foodie.png" class="w-[50px] h-auto" alt=" A food image" />
             <p class=" font-extrabold text-3xl font-ClashDisplay text-[#f9b111]">Foodie</p>
@@ -11,13 +11,13 @@
 
         <div v-show="!mobile" class="flex items-center gap-1 font-Satoshi max-md:hidden">
             <router-link :to="{ name: 'byName' }"
-                class="inline-flex font-bold text-base items-center px-2 h-full hover:bg-[#f9b111] ">Search Meals</router-link>
+                class="inline-flex font-bold text-base items-center px-2 h-full hover:text-[#f9b111] focus:text-[#f9b111]">Search Meals</router-link>
 
             <router-link :to="{ name: 'byLetter' }" 
-            class="font-bold inline-flex items-center px-2 h-full hover:bg-[#f9b111]">Meal-by-Alphabet</router-link>
+            class="font-bold inline-flex items-center px-2 h-full hover:text-[#f9b111] focus:text-[#f9b111]">Meal-by-Alphabet</router-link>
 
             <router-link :to="{ name: 'ingredients' }"
-                class="font-bold inline-flex items-center px-2 h-full hover:bg-[#f9b111]">Meals-By-Ingerdients</router-link>
+                class="font-bold inline-flex items-center px-2 h-full hover:text-[#f9b111] focus:text-[#f9b111]">Meals-By-Ingerdients</router-link>
         </div>
 
         <div @click="toggleMobileNav"
@@ -28,27 +28,27 @@
 
         <Transition name="mobile-nav">
             <ul v-show="mobileNav" @click.stop=""
-                class="flex fixed flex-col items-center justify-evenly w-full max-w-[250px] h-screen z-[100]  bg-white top-0  left-0 font-Satoshi">
+                class="flex fixed flex-col items-center justify-evenly w-full max-w-[250px] h-screen z-[100]  bg-[#1D232B] top-0  left-0 font-Satoshi">
 
-                <li class=" bg-white ">
+                <li class=" ">
 
-                    <router-link :to="{name: 'byName'}" class="hover:text-[#007aff]  mr-0  text-[#000]">Explore</router-link>
+                    <router-link :to="{name: 'byName'}" class="hover:text-[#f9b111] focus:text-[#f9b111] text-2xl  mr-0">Explore</router-link>
                 </li>
 
                 <li class="">
 
-                    <router-link :to="{name: 'byLetter'}" class="hover:text-[#007aff]  mr-0 text-[#000]">MealsbyLetter</router-link>
+                    <router-link :to="{name: 'byLetter'}" class="hover:text-[#f9b111] focus:text-[#f9b111] text-2xl  mr-0 ">MealsbyLetter</router-link>
                 </li>
 
                 <li>
-                    <router-link :to="{name: 'ingredients'}" class=""> Meal by Category</router-link>
+                    <router-link :to="{name: 'ingredients'}" class="hover:text-[#f9b111] focus:text-[#f9b111] text-2xl"> Meal by Category</router-link>
                 </li>
                 <li>
-                    <router-link  to="" class="">kitchen tips </router-link>
+                    <router-link  to="/" class="text-2xl hover:text-[#f9b111] focus:text-[#f9b111]">kitchen tips </router-link>
                 </li>
 
                 <li>
-                    <router-link to="" class="">About Us</router-link>
+                    <router-link to="/" class="text-2xl hover:text-[#f9b111] focus:text-[#f9b111]">About Us</router-link>
                 </li>
 
             </ul>

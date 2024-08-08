@@ -1,5 +1,5 @@
 <template>
-  <div class="px-28 max-md:px-0 mt-5">
+  <div class="px-28 max-md:px-6 mt-5">
     <div class="mb-3">
       <p class="text-lg font-medium font-Commissioner">Hey there!</p>
       <h1 class="font-bold text-4xl font-ClashDisplay">Find your food now</h1>
@@ -17,7 +17,7 @@
         v-if="!keyword "
         class="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none font-bold text-4xl flex justify-center items-center inset-0"
       >
-        Start searching for any meal and hit Enter
+        Start searching for any meal of your choice
       </div>
 
       <div

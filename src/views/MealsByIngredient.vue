@@ -1,5 +1,5 @@
 <template>
-    <div class="px-28 max-md:px-0">
+    <div class="px-28 max-md:px-6">
         <div class="mt-6">
             <h1 class="text-4xl font-bold mb-4 text-orange-500">Meals for {{ ingredient?.strIngredient }}</h1>
         </div>

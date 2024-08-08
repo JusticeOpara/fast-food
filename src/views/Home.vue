@@ -1,5 +1,5 @@
 <template>
-    <div class="px-28 max-md:px-0 ">
+    <div class="px-28 max-md:px-6 ">
         <div
             class="h-[60vh] max-md:items-center max-sm:h-[100%] w-full rounded-[20px] flex my-10 justify-between max-md:justify-center">
             <div
