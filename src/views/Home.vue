@@ -23,7 +23,7 @@
 
 
             <div class="h-full w-[50%] bg-black rounded-r-[20px] flex justify-end max-md:hidden ">
-                <img src="../assets/eating.jpeg" class="h-full w-full object-cover rounded-r-[20px]" alt="" />
+                <img src="../assets/eating.jpeg" class="h-full w-full object-cover rounded-r-[20px]" alt="eating" />
             </div>
 
         </div>
@@ -42,7 +42,7 @@ import axiosClient from "../axiosClient.js";
 const meals = ref([]);
 
 onMounted(async () => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 100; i++) {
         axiosClient
             .get(`random.php`)
             .then(({ data }) => meals.value.push(data.meals[0]));
